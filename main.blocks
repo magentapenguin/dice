@@ -1,37 +1,37 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="w(0HZ7/^K8kN5=rG+NPp">list</variable><variable id="gLSTSV1*A4/@=__fWF`)">item</variable><variable id="fDbED8O0`sh%P!~`aw.n">numbers</variable><variable id="!x9b/GG;q!sc(E?0#rY]">myImage</variable></variables><block type="device_gesture_event" id="j4FRGzUR3iaY)W~SZ%N," x="0" y="0"><field name="NAME">Gesture.Shake</field><statement name="HANDLER"><block type="device_show_image_offset" id="~tv%mQM)y1%%5F%?xR4_"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="lists_index_get" id="|$MyFF[dql8P3}%mo$sI"><value name="LIST"><block type="variables_get" id="RFB8S,^ui=w/ojHt9#-m"><field name="VAR" id="fDbED8O0`sh%P!~`aw.n">numbers</field></block></value><value name="INDEX"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_random" id="|[wzVm@}l|:VkY5Uywb1"><value name="min"><shadow type="math_number" id="s!DPAOKN#JgJN_wO,lF;"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number" id="c][cII_e[NkO$QLB%$Ao"><field name="NUM">5</field></shadow></value></block></value></block></value><value name="offset"><shadow type="math_number" id="uoHx$Fd^+j!H#]+h@/^N"><field name="NUM">0</field></shadow></value></block></statement></block><block type="pxt-on-start" id="4s1kcw#Yjm9H!dd2j+Th" x="-525" y="254"><statement name="HANDLER"><block type="variables_set" id="}{Q0lhyi~E}BP9(i%_Cd"><field name="VAR" id="fDbED8O0`sh%P!~`aw.n">numbers</field><value name="VALUE"><block type="lists_create_with" id=",c}R:[%^f|:nXkn;]-F7" inline="false"><mutation items="6" horizontalafter="3"></mutation><value name="ADD0"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_build_image" id="`@*t-|ync{wb@x`(R+HJ"><field name="LEDS">`
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="?Vw)qtkn:|uL5Lk%(OMX">numbers</variable></variables><block type="function_definition" id="81@Z$+(_OFpxtH:uB1x#" x="0" y="0"><mutation name="roll" functionid="4Qpd{v%jCQz$lNN,VXWx"></mutation><field name="function_name">roll</field><statement name="STACK"><block type="device_show_image_offset" id="kPIs`hOYn4;8H]!bf0J["><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="lists_index_get" id="JVGamr.:%9`Yu[hb]pu="><value name="LIST"><block type="variables_get" id="`HH9pn)yi!aQU.SwMZ+Q"><field name="VAR" id="?Vw)qtkn:|uL5Lk%(OMX">numbers</field></block></value><value name="INDEX"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_random" id="sL]R)b9*}%va*%{rt:OJ"><value name="min"><shadow type="math_number" id="[T5`Vn0M)Wx{fmACFT/E"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number" id="*%NCoQq|$V##9oV*{Cmx"><field name="NUM">5</field></shadow></value></block></value></block></value><value name="offset"><shadow type="math_number" id="09|PE$yn{hWKa:c9l?mo"><field name="NUM">0</field></shadow></value></block></statement></block><block type="pxt-on-start" id="pwWlzpaNTa.136j}pjW[" x="-535" y="244"><statement name="HANDLER"><block type="typescript_statement" id="ajY/vXsR#B]$f`*/;*vE" editable="false"><mutation xmlns="http://www.w3.org/1999/xhtml" line0="input.onGesture(Gesture.Shake, roll)" numlines="1"></mutation><next><block type="typescript_statement" id="B!i?6J*z6IDy`=_(/YnQ" editable="false"><mutation xmlns="http://www.w3.org/1999/xhtml" line0="input.onButtonPressed(Button.A, roll)" numlines="1"></mutation><next><block type="variables_set" id="?[FX#N4Hg[oOXlo8_q-#"><field name="VAR" id="?Vw)qtkn:|uL5Lk%(OMX">numbers</field><value name="VALUE"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="lists_create_with" id="K23j%lFUGAG}/1#ItLtk" inline="false"><mutation items="6" horizontalafter="3"></mutation><value name="ADD0"><block type="device_build_image" id="/B/Y3Y*iBGDhHrb#$*Q1"><field name="LEDS">`
         . . . . . 
         . . . . . 
         . . # . . 
         . . . . . 
         . . . . .
-        `</field></block></value><value name="ADD1"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_build_image" id="yXxMYj%A7{*#3B!jxjY@"><field name="LEDS">`
+        `</field></block></value><value name="ADD1"><block type="device_build_image" id="S308x]oY%xbL`7!A,j4K"><field name="LEDS">`
         . . . . . 
         . # . . . 
         . . . . . 
         . . . # . 
         . . . . .
-        `</field></block></value><value name="ADD2"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_build_image" id="SCw9Kr-`*yRwWidc#aqI"><field name="LEDS">`
+        `</field></block></value><value name="ADD2"><block type="device_build_image" id="FC:2D/CYJQ?6*2dRmZE("><field name="LEDS">`
         # . . . . 
         . . . . . 
         . . # . . 
         . . . . . 
         . . . . #
-        `</field></block></value><value name="ADD3"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_build_image" id="@9gBytq@r}hE)QF^;u=D"><field name="LEDS">`
+        `</field></block></value><value name="ADD3"><block type="device_build_image" id="%GXLZ4BsKMrK0iG_!1Mx"><field name="LEDS">`
         # . . . # 
         . . . . . 
         . . . . . 
         . . . . . 
         # . . . #
-        `</field></block></value><value name="ADD4"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_build_image" id="Duio(6yz$FZ6?yLY0~lM"><field name="LEDS">`
+        `</field></block></value><value name="ADD4"><block type="device_build_image" id="iPGe%(NQ0iUpwlHvPNQ="><field name="LEDS">`
         # . . . # 
         . . . . . 
         . . # . . 
         . . . . . 
         # . . . #
-        `</field></block></value><value name="ADD5"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_build_image" id="EV}kRACB5JQnJHhdtW3f"><field name="LEDS">`
+        `</field></block></value><value name="ADD5"><block type="device_build_image" id="]yURD[Y0X{(vp5X:CQ47"><field name="LEDS">`
         # . . . # 
         . . . . . 
         # . . . # 
         . . . . . 
         # . . . #
-        `</field></block></value></block></value></block></statement></block></xml>
+        `</field></block></value></block></value></block></next></block></next></block></statement></block></xml>
